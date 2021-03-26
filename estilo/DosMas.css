@@ -1,0 +1,22 @@
+#r1{
+   border-bottom-right-radius: 0px;
+   color: black;
+   
+}
+
+#r2{
+    border-bottom-right-radius: 25px; 
+ }
+ #r3{
+    border-bottom-right-radius: 530px; 
+ }
+ #r4{
+    border-bottom-right-radius: 50px; 
+    
+ } 
+ #r5{
+    border-radius: 100px 100px 100px 100px;
+ }
+ #r6{
+    border-radius: 100px 100px 100px 100px; 
+ }
