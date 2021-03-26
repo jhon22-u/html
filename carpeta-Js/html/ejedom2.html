@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/getbootstrap/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <script src="/getbootstrap/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <script src="/boot1.html/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <ul>
+        <li>Informatica</li>
+        <li>Matematicas</li>
+        <li>Ciencias</li>
+        <li>Matematicas</li>
+    </ul>
+    <button onclick="cambiar()">CAMBIAR DE MATEMATICAS A LENGUA ALEX</button>
+    <button onclick="cambio()">CAMBIAR DE MATEMATICAS A LENGUA FRANCIS</button>
+    <script>
+    function cambiar()
+        {
+            var valores =document.getElementsByTagName("li")
+            valores[1].innerHTML="Lengua"
+            
+        }
+    </script>
+    <script>
+
+        function cambio(){
+        var mates = document.getElementsByTagName("li")
+        for(i in mates){
+            if(mates[i].innerHTML == "Matematicas"){
+                mates[i].innerHTML = "Lengua"
+            }
+        }
+    }
+    </script>
+
+
+
+    
+</body>
+</html>

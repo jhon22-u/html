@@ -12,7 +12,24 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-
+    <div id="principal">
+        <p onclick="this.innerHTML='hola'">Esto es un ejemplo</p>
+        <p>Esto es otro ejemplo</p>
+    
+        </div>
+        <p onclick="this.style.backgroundColor='green'">Este es un tercer parrafo</p>
+        <script>
+            
+            var parrafos=document.getElementsByTagName("p")
+            document.write(parrafos.length)
+            document.getElementById("principal") .style.background="red"
+    /*
+            for(objeto in parrafos){
+                document.write(parrafos[objeto].innerHTML)
+            }
+            //parrafo.innerHTML="hola"*/
+        </script>
+    
     
     <script src="/carpeta-Js/js/array.js"></script>
 </body>
