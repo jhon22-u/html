@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/getbootstrap/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <script src="/getbootstrap/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <script src="/boot1.html/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar fixed-top navbar-dark navbar-expand-lg" style="background-color: rgb(136, 92, 124);">
+                <a class="navbar-brand" href="#"><i class="bi bi-grid-3x3-gap"></i> </a>
+                <a class="navbar-brand" href="#" style="margin-right: 60px;">Facturación/Contabilidad </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Clientes</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"> Proveedores</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Informes</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"> Configuración</a>
+                        </li>
+                        
+    
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#"><i class="bi bi-chat-right-text"></i>
+                        <li class="nav-item active"><a class="nav-link" href="#"><i class="bi bi-clock-history"></i></a>
+                        </li>
+                        <li class="nav-item active dropdown">
+                           <a class="nav-link" href="#"><i class="bi bi-tools"></i></a>
+                        </li>
+                        <li class="nav-item active"><a class="nav-link" href="#"><i class="bi bi-person-circle"></i>
+                                Hola Alberto </a></li>
+    
+                    </ul>
+                </div>
+            </nav>
+             </header>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    
+                    <div class="col-lg-6"></div>
+                    <br/>
+                    <br/>
+    
+                </div>
+                <br/>
+            
+                <div class="col text-center"  style="margin-bottom: 20px;">
+                <input  type="text"  placeholder="Buscar"> 
+                 </div>
+                <div class="row justify-content-between" style="margin-top: 15px;">
+                    <div class="col-lg-6">
+                        <button type="button" class="btn btn-primary">Primary</button>
+                        <button type="button" class="btn btn-outline-dark">CARGAR</button>
+                    </div>
+                    <div class="col-3" style="margin-bottom: 20px;">
+                         <span class="darkgrey text" style="margin-right: 20px;"><i class="bi bi-funnel-fill"></i>
+                            Filtros </span>
+                           
+                               <span class="darkgrey text" style="margin-right: 20px;"><i class="bi bi-list"
+                                style="font-weight: border;"></i> Agrupar por</span>
+                        <span class="darkgrey text"><i class="bi bi-star-fill"></i> Favoritos</span>
+                    </div>
+                    <div class="col text-right" style="margin-bottom: 20px;">
+                        <span class="darkgrey text" style="margin-right: 10px;"><i class="bi bi-list-ul"></i></span>
+                        <span class="darkgrey text" style="margin-right: 10px;"><i class="bi bi-grid-fill"></i></span>
+                      
+                    </div>
+                </div>
+            </div>
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Numero
+                            </label>
+                        </div>
+                    </th>
+                    <th scope="col">Cliente</th>
+                    <th scope="col">Fechas de Factura</th>
+                    <th scope="col">Fechas de Vencimiento</th>
+                    <th scope="col">Actividad Siguientes</th>
+                    <th scope="col">Impuesto excluidos</th>
+                    <th></th>
+                    <th></th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Estado de pago</th>
+
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <th>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">REF001 </label>
+                        </div> 
+                    </th>
+                      <td></td>
+                      <td>13/04/2021</td>
+                      <td> </td>
+                      <td><i style="color: rgb(42, 165, 73);" class="bi bi-clock-history"></i> Volutpat blandit</td>
+                      <td>16.745.00 €</td>
+                      <td></td>
+                      <td></td>
+                      <td>68.140.00 €</td>
+                      <td><span class="badge badge-pill badge-info" >Borrador</span></td>
+                      <td><span class="badge badge-success">pagado</span>
+                      
+                    </tr>
+                    <tr>
+                      <th >  <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked"> RJT002</label>
+                    </div>
+                    </th>
+                      <td></td>
+                      <td>11/04/2021</td>
+                      <td style="color: brown;">10 Days ago</td>
+                      <td><i style="color: rgb(165, 42, 128);" class="bi bi-clock-history"></i> Viverra nam</td>
+                      <td>55.250,00 €</td>
+                      <td></td>
+                      <td></td>
+                      <td>98.140.00 €</td>
+                      <td><span class="badge badge-pill badge-info">Borrador</span></span></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th >
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked"> JTS003S </label>
+                        </div>
+                      </th>
+                      <td></td>
+                      <td>23/04/2021</td>
+                      <td>nl 11 Days</td>
+                      <td><i style="color: rgb(42, 165, 73);" class="bi bi-clock-history"></i> Integer vitae</td>
+                      <td>68.140.00 €</td>
+                      <td></td>
+                      <td></td>
+                      <td>68.140.00 €</td>
+                      <td> <span class="badge badge-success">Publicado</span></td>
+                      <td><span class="badge badge-pill badge-warning"> En Proceso de pago</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+    
+            </nav>
+            </header> 
+
+
+    </div>
+    
+</body>
+</html>
