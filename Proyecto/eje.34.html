@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/getbootstrap/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <script src="/getbootstrap/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <script src="/boot1.html/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <form action="nada.jsp" autocomplete="on">
+        Nombre:<input type="text" name="fname" /><br />
+        apellidos: <input type="text" name="lname" /><br />
+        correo: <input type="email" name="email" autocomplete="off" /><br />
+        introduzca una URL: <input type="url" name="url" /><br />
+        Cantidad: <input type="number" />
+        <audio id="audio" controls=" controls" src="/html/sonidos/ringtones-iphone-8-plus.mp3">
+            <source src="sonido.og" type="audio/ogg" />
+            <source src="sonido.og" type="audio/mpeg" />
+
+        </audio>
+        <video width="320" src="/html/sonidos/2021-02-10 15-00-49.mp4" id="video">
+        </video>
+        </script>
+        <div class="col-12 pt-5 pb-5 pl-5">
+            <button onclick="playv()" type="button" class="btn btn-success">Play Video</button>
+            <button onclick="pausev()" type="button" class="btn btn-danger">Stop Video</button>
+
+            <button onclick="subir()" type="button" class="btn btn-success">Play Video</button>
+            <button onclick=" vajar()" type="button" class="btn btn-danger">Stop Video</button>
+
+            <button onclick="playa()" type="button" class="btn btn-success">Play Audio</button>
+            <button onclick="pausea()" type="button" class="btn btn-danger">Stop Audio</button>
+
+
+        </div>
+
+
+
+
+
+    </form>
+    <script>
+
+        var vid = document.getElementById("video");
+        var aud = document.getElementById("audio");
+        //Play - Pause 
+
+        function playv() {
+            vid.play();
+        }
+        function pausev() {
+            vid.pause();
+        }
+
+        function playa() {
+            aud.play();
+        }
+        function pausea() {
+            aud.pause();
+        }
+
+        function volumen_abajo(){
+        
+        var volumendown=document.getElementById("video").volume
+        var volumendown=volumendown - 0.1;
+        document.getElementById("video").volume=volumendown
+        
+        document.getElementById("volumen_actual").innerHTML="volumen actual: " + volumendown*100 +  " %"
+    }
+
+    </script>
+
+
+
+</body>
+
+</html>

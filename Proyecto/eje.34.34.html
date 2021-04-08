@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video id="video" width="640" src="/html/sonidos/2021-02-10 15-00-49.mp4"  preload="auto" volume="1" >
+    <!--  autoplay -->
+        El navegador no soporta video
+    </video>
+    <div style="background-color: lightgrey; width:640px">
+    <button onclick="comenzar()">></button>
+    <button onclick="parar()" >||</button>
+    <button onclick="volumen_arriba()">+</button>
+    <button onclick="volumen_abajo()" >-</button>
+    <input  onchange="ajustar_volumen" class="volumen" id="reproductor" type="range" name="points" min="0" max="1" step="0.1" />
+
+    <label id="volumen_actual" > volumen actual: 100 % </label>
+
+    <br/>
+    <iframe width="450" height="350" src="https://www.youtube.com/embed/watch?v=-jTGrbSBDtA&ab_channel=TiempodeCine
+    "></iframe>
+    </div>
+<script>
+
+       
+   function comenzar(){
+        document.getElementById("video").play()
+    }
+
+    function parar(){
+        document.getElementById("video").pause()
+
+    }
+
+    function volumen_arriba(){
+        
+        var volumenup=document.getElementById("video").volume
+        var volumenup=volumenup + 0.1;
+        
+        document.getElementById("video").volume=volumenup
+        
+        document.getElementById("volumen_actual").innerHTML= "volumen actual: " + volumenup*100 + " %" 
+    }
+
+    function volumen_abajo(){
+        
+        var volumendown=document.getElementById("video").volume
+        var volumendown=volumendown - 0.1;
+        document.getElementById("video").volume=volumendown
+        
+        document.getElementById("volumen_actual").innerHTML="volumen actual: " + volumendown*100 +  " %"
+    }
+
+    function ajustar_volumen{
+        var reproductor = document.getElementById("reproductor");
+        vidieo
+    }
+
+
+</script>
+</body>
+</html>
